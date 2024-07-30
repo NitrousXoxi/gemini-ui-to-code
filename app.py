@@ -4,7 +4,7 @@ from PIL import Image
 import google.generativeai as genai
 
 # Configure the API key directly in the script
-API_KEY = 'YOUR KEY'
+API_KEY = 'AIzaSyBbCST-Zq-51vdTtuZT_VJ5sx05VLxEnFk'
 genai.configure(api_key=API_KEY)
 
 # Generation configuration
@@ -28,7 +28,7 @@ safety_settings = [
 MODEL_NAME = "gemini-1.5-pro-latest"
 
 # Framework selection (e.g., Tailwind, Bootstrap, etc.)
-framework = "Regular CSS use flex grid etc"  # Change this to "Bootstrap" or any other framework as needed
+framework = "Tailwind"  # Change this to "Bootstrap" or any other framework as needed
 
 # Create the model
 model = genai.GenerativeModel(
@@ -51,8 +51,8 @@ def send_message_to_model(message, image_path):
 
 # Streamlit app
 def main():
-    st.title("Gemini 1.5 Pro, UI to Code 👨‍💻 ")
-    st.subheader('Made with ❤️ by [Skirano](https://x.com/skirano)')
+    st.title("I and U Code, UI to Code 👨‍💻 ")
+    st.subheader('Made with ❤️ by [BimaDev](https://bimadev.69dev.id)')
 
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
